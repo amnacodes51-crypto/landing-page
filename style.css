@@ -1,0 +1,170 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    color: #432713;
+}
+
+/* Navbar */
+
+header {
+    width: 100%;
+    height: 16vh;
+    background-color: #f8eee5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #432713;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #75421f;
+}
+
+.search-icon {
+    height: 60px;
+    width: 60px;
+    background-color: #75421f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+/* Main Section */
+
+main {
+    height: 84vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+
+/* Background Image */
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.background-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Content */
+
+.content {
+    width: 65%;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.content h1 {
+    font-size: 75px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #321c0d;
+}
+
+.content h1 span {
+    font-size: 55px;
+}
+
+.content p {
+    font-size: 23px;
+    line-height: 1.5;
+    margin-top: 22px;
+    margin-bottom: 38px;
+    color: #432713;
+}
+
+
+/* Search Bar */
+
+.search-box {
+    height: 80px;
+    width: 675px;
+    background-color: #fff5ed;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 12px;
+}
+
+.search-symbol {
+    font-size: 35px;
+    padding-left: 15px;
+}
+
+.search-box input {
+    height: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.search-box input::placeholder {
+    color: #a68c7b;
+}
+
+.search-box button {
+    height: 60px;
+    padding: 0 40px;
+    background-color: #75421f;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #432713;
+}
